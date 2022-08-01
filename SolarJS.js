@@ -57,15 +57,6 @@ function moveSolar() {
 setInterval(moveSolar, 1000);
 
 
-// working on start function.
-// function start(moveSolar){
-//   let start = moveSolar; {
-//     setInterval(start, 1000);
-//   }
-  
-//   return start;
-// }
-
 
 // function moveMercury(){
 //   var minX = 300;
