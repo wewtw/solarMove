@@ -93,7 +93,7 @@ var sun = document.getElementById("sun")
 
 
 /AROUND THE SUN. //Part 2//comment out to see part 1
-const posEarthY = 400;
+/*const posEarthY = 400;
 const posEarthX = 500;
 
 
@@ -116,10 +116,10 @@ function animate(time, X, Xmars, Earth) {
   requestAnimationFrame(newTime => animate(newTime, time));
   }
 requestAnimationFrame(animate);
+*/
 
 
-
-/*const posEarthY = 400;
+const posEarthY = 400;
 const posEarthX = 500;
 let around = Math.PI / 2;
 
@@ -142,7 +142,8 @@ function animate(time) {
   document.getElementById("venus").style.top = venusY + "px";
   document.getElementById("mercury").style.left = mercuryX + "px";
   document.getElementById("mercury").style.top = mercuryY + "px";
+  
+  requestAnimationFrame(animate);
 }
 
 requestAnimationFrame(animate);
-*/
