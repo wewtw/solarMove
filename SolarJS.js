@@ -92,8 +92,34 @@ var sun = document.getElementById("sun")
 // timeout();
 
 
-//AROUND THE SUN. //Part 2//comment out to see part 1
+/AROUND THE SUN. //Part 2//comment out to see part 1
 const posEarthY = 400;
+const posEarthX = 500;
+
+
+
+function animate(time, X, Xmars, Earth) {
+
+  if (X != null) {
+  around += (time - X) * .0005;
+  }
+  mars.style.left = (Math.cos(around) * 400 )+ posEarthX + Math.random(around)*10 + "px";
+  mars.style.top = (Math.sin(around) * 400) + posEarthY + Math.random(around)*10 + "px";
+  earth.style.left = (Math.cos(around) * 300) + posEarthX + "px";
+  earth.style.top = (Math.sin(around) * 300) + posEarthY + "px";
+  venus.style.top = (Math.sin(around) * 210) + posEarthY+ "px";
+  venus.style.left = (Math.cos(around) * 210) + posEarthX + "px";
+  mercury.style.left = (Math.cos(around) * 150) + posEarthX+ "px";
+  mercury.style.top = (Math.sin(around) * 150) + posEarthY + "px";
+  sun.style.top = (Math.sin(around) * 2) + posEarthY + "px";
+  sun.style.left = (Math.cos(around) * 2) + posEarthX+ "px";
+  requestAnimationFrame(newTime => animate(newTime, time));
+  }
+requestAnimationFrame(animate);
+
+
+
+/*const posEarthY = 400;
 const posEarthX = 500;
 let around = Math.PI / 2;
 
@@ -119,3 +145,4 @@ function animate(time) {
 }
 
 requestAnimationFrame(animate);
+*/
