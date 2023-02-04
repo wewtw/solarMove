@@ -7,8 +7,8 @@ var earth = document.getElementById("earth");
 var venus = document.getElementById("venus");
 var mercury = document.getElementById("mercury");
 var sun = document.getElementById("sun")
-var around = Math.PI /2;
-var speed = Math.random + 5;
+//var around = Math.PI /2;
+//var speed = Math.random + 5;
 
 // moves the planets//edge detection and reversal of objects.//Uncomment to try
 //function moveSolar() {
