@@ -1,0 +1,86 @@
+#sun {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(to bottom, #33ccff 0%, #ffff66 100%);
+  border-radius: 25px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.planet {
+  font-family: 'Courier New', Courier, monospace;
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+  border-radius: 12px;
+  transform: translate(-50%, -50%);
+  color: green;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.planet:nth-child(8):after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  opacity: 20%;
+  background-color: yellow;
+  border-radius: 50% 50% 50% 50%;
+  position: absolute;
+  top: center;
+  left: center;
+
+}
+
+.comet {
+  width: 3px;
+  height: 3px;
+  background-color: silver;
+  border-radius: 15px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html {
+  background-color: black;
+
+
+}
+
+.star {
+  border-radius: 12px;
+  justify-content: space-around;
+  transform: rotate(0deg);
+  animation: rotate-star 5s linear infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes rotate-star {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.spaceship {
+  background-color: violet;
+  border-radius: 10px 10px 50% 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
