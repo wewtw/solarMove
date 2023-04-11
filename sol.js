@@ -40,9 +40,9 @@ setInterval(function() {
 //comets///
 const comets = document.querySelectorAll(".comet");
 const cometSpeeds = [1, 2, 3, 4, 5, 6, 7, 8]; // speeds of each comet
-const trailLength = 10; // number of trail elements
-const trailOpacityStep = 10; // adjust this value to increase visibility
-const maxOffset = 144; // maximum offset for each iteration
+const trailLength = 40; // number of trail elements
+const trailOpacityStep = 40; // adjust this value to increase visibility
+const maxOffset = 1000; // maximum offset for each iteration
 
 for (let i = 0; i < comets.length; i++) {
   let x = Math.random() * window.innerWidth;
@@ -54,7 +54,7 @@ for (let i = 0; i < comets.length; i++) {
     let cometTrail = document.createElement("div");
     cometTrail.classList.add("comet-trail");
     cometTrail.style.opacity = (trailLength - j) * trailOpacityStep;
-    cometTrail.style.backgroundColor = getRandomColor();
+    cometTrail.style.backgroundColor = "red";
     comets[i].appendChild(cometTrail);
   }
 }
